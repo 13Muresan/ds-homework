@@ -8,10 +8,10 @@
 l1 = []
 
 # Preluam input de la tastatura si il salvam in variabila x
-x = input()
+x = input("Your input: ")
 
 # Cat timp de la tastatura nu primim exit ca si valoare
-while x != 'exit':
+while x != 'stop':
     # Adaugam la lista elementul nou primit de la tastatura
     l1.append(x)
     x = input()

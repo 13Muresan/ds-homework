@@ -14,3 +14,10 @@
         Veti primi: 1232
         Veti printa: False
 """
+
+x = input("Write your number here:  ")
+
+if str(x) == str(x)[::-1]:
+    print("True")
+else:
+    print("False")

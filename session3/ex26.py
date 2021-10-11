@@ -12,4 +12,16 @@
         True
         False
         False
+
 """
+
+x = input("Enter a number until 'exit':\n ")
+
+while x!= 'exit':
+    x = int(x)
+    if x % 2 == 0:
+        print("True")
+    else:
+        print("False")
+
+    x = input()

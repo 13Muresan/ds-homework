@@ -9,3 +9,15 @@
         2 (pentru vocale)
         4 (pentru consoane)
 """
+x = input("Your word:")
+x = str(x)
+
+vocale=0
+consoane=0
+
+for char in x:
+    if char in 'aeiouAEIOU':
+        vocale += 1
+    else: consoane += 1
+
+print (f"Your word has {vocale} vowels and {consoane} consonants.")

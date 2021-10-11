@@ -14,5 +14,21 @@
             0: 'c',
             1: 'm',
             2: 'i'
+
         }
 """
+word = input("word:")
+word = list(word)
+
+x = input("number:")
+x = int(x)
+
+d1={}
+l1=[]
+
+for i in range(x):
+    l1.append(i)
+    d1 = dict(zip(l1,word))
+
+print("Dictionary:", d1)
+

@@ -7,3 +7,11 @@
         Veti primi: 'Center for Intelligent Machines', 2, 5
         Veti printa: 'nter'
 """
+word = input("Your Sentences: ")
+x = input("x: ")
+y = input("y: ")
+
+
+x = int(x)
+y = int(y)
+print("Output: ", word[x:y+1])

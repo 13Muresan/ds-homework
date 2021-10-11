@@ -17,7 +17,12 @@ l1 = [1, 2, 3, 4]
 l2 = ['a', 'b', 'c', 'd']
 
 # In varaibila d1 avem un dictionar gol
-d1 = {}
+# d1 = {}
 
 # Afisam listele l1 si l2
-print(l1, l2)
+# print(l1, l2)
+
+d1 = dict(zip(l1, l2))
+
+# Printing resultant dictionary
+print("Output: " + str(d1))

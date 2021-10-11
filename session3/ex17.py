@@ -7,3 +7,8 @@
         Veti primi: 'cmi', 5
         Veti printa: 'cmicmicmicmicmi'
 """
+word = input("word: ")
+x = input("x: ")
+x = int(x)
+
+print("Output: ", word*x)

@@ -8,7 +8,7 @@
 d1 = {
     1: 'CMI',
     2: 'CMI2'
-}
+     }
 
 # Afisam dictionarul inainte de schimbare
 print(d1)
@@ -16,5 +16,7 @@ print(d1)
 # Schimbam valoarea de la cheia 2, din 'CMI2' in 'CMI'
 d1[2] = 'CMI'
 
+d1.update({3: 'CMI3'})
+
 # Afisam dictionarul dupa schimbare
-print(d1)
+print("Output: ", d1)

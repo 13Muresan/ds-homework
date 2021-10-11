@@ -10,5 +10,10 @@ l2 = [5, 6, 7]
 
 # Afisam listele l1 si l2 separat.
 # Pentru a vedea rezultatul, rulati acest script.
-print(l1)
-print(l2)
+# print(l1)
+# print(l2)
+
+for i in l2:
+    l1.append(i)
+
+print("Output:" + str(l1))

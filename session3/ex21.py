@@ -9,4 +9,15 @@
     exemplu:
         Veti primi: 'cmi', 'center', 'for', 'machines'
         Veti printa: ['cm', 'cente', 'fo', 'machine']
+
 """
+
+x = input("Your inputs until 'exit': \n")
+
+l1 = []
+
+while x != 'exit':
+    l1.append(x[:-1])
+    x = input()
+
+print("Output:", l1)

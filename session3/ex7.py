@@ -15,6 +15,6 @@ print(s1)
 
 # Adaugam valoarea 4 setului folosind metoda add()
 s1.add(4)
-
+s1.update(l1)
 # Afisam setul dupa schimbare
-print(s1)
+print("Output: ", s1)

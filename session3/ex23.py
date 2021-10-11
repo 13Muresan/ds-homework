@@ -14,3 +14,10 @@
         Veti primi: 'cojoc'
         Veti printa: True
 """
+
+x = input("Write your word here:  ")
+
+if str(x) == str(x)[::-1]:
+    print("True")
+else:
+    print("False")
