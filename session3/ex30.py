@@ -9,4 +9,23 @@
 
         Veti primi: '(()]'
         Veti printa: False
+
 """
+
+data = input()
+
+def parentheses(data):
+    stack = []
+    dict = {'}':'{',']':'[',')':'('}
+    for i in data:
+        if i in dict.values():
+            stack.append(i)
+        elif not stack or dict[i] != stack.pop():
+            return False
+    if stack:
+        return False
+    return True
+
+print(parentheses(data))
+
+
