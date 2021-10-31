@@ -5,3 +5,14 @@
     Toate astea le veti face intr-o functie read_from_file(file), unde
     file este numele fisierului primit dat ca parametru.
 """
+
+
+def read_from_file():
+    file = open("n.json", 'r')
+
+    return file
+
+
+f = read_from_file()
+for line in f:
+    print(line)

@@ -16,3 +16,21 @@
             }
 
 """
+
+import json
+
+
+def f(n):
+    dict_1 = {
+        1: 'blabla',
+        5: 'cmi',
+        7: 'cmi22',
+        10: 'balqef'
+    }
+    with open("n.json", "w") as outfile:
+        json.dump(dict_1, outfile)
+
+    return outfile
+
+
+f("ceva")
