@@ -15,22 +15,26 @@
                 10: 'balqef'
             }
 
+
 """
 
 import json
+import random
+from random import choice
+from string import ascii_lowercase
 
 
 def f(n):
-    dict_1 = {
-        1: 'blabla',
-        5: 'cmi',
-        7: 'cmi22',
-        10: 'balqef'
-    }
+
+    listofStrings = [''.join(choice(ascii_lowercase) for _ in range(3,7)) for _ in range(4)]
+    listofInts = random.sample(range(0, 11), 4)
+    dict_1 =  dict( zip(listofInts, listofStrings))
+
     with open("n.json", "w") as outfile:
         json.dump(dict_1, outfile)
 
-    return outfile
+    return dict_1
 
 
 f("ceva")
+
