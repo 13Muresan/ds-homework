@@ -6,4 +6,18 @@
     Raspuns:
         - func('aabbcc')
             ---> 'bbccdd'
+
 """
+
+import string
+
+alphabet = string.ascii_lowercase
+
+
+def func(result=''):
+    shift = 1
+    result = ''.join(map(lambda x: chr((ord(x) - 97 + shift) % 26 + 97) if x in alphabet else x, result.lower()))
+    return result
+
+
+print(func('xyz'))

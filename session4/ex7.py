@@ -12,3 +12,10 @@
     Observatii:
         - functia trebuie sa aiba MAXIM 1 linie de cod ca si body
 """
+
+
+def func(pfx, word, sfx):
+    return pfx + word + sfx
+
+
+print(func("a", "word", "b"))

@@ -42,5 +42,28 @@ def generate_random_str(str_length):
 
 prefix = input('Give me an prefix\n')
 x = int(input('Give me a number to generate the random string\n'))
+string_1 = input('Give me an suffix:\n')
 
-print(add_prefix(prefix, generate_random_str(x)))
+
+def add_suffix(prefix, string_1):
+    def compare(a, b):
+        for x, y in zip(a, b):
+            if x == y:
+                return True
+
+    i = 0
+
+    while i < 3 and compare(prefix, string_1) == True:
+        new_sfx = input("Give Me Another Suffix:\n")
+        i += 1
+        return new_sfx
+
+    if i < 3:
+        return string_1
+    else:
+        return ""
+
+
+# add_suffix(prefix, string_1)
+
+print(f'{str(add_prefix(prefix, generate_random_str(x)))}{str(add_suffix(prefix, string_1))}')

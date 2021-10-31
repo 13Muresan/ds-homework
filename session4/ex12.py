@@ -7,6 +7,20 @@
 """
 
 
+def dec(func):
+    def myfunc(args):
+        func(args)
+        y = open("output12.data", "a")
+        y.write(str(func(args)))
+        y.close
+
+    return myfunc
+
+
 # decorate me
+@dec
 def f(x):
     print(x)
+
+
+print(f("cmi"))

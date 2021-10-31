@@ -19,3 +19,26 @@
             cmicmi
             b
 """
+import random
+
+
+def dec(func):
+    def myfunc(args):
+        file = open("output17.data", "a")
+        file.write(f'\n{func(args)}')
+        file.close
+
+    return myfunc
+
+
+# decorate me
+@dec
+def f(x):
+    result = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=x))
+    return result
+
+
+x = input(">>")
+x = int(x)
+
+f(x)

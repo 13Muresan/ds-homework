@@ -3,9 +3,8 @@
     Modificati aceasta functie incat sa intoarca X la puterea Y la puterea Z.
 """
 
+def power(x, y, z):
+    return (x ** y) ** z
 
-def power(x, y):
-    return x ** y
 
-
-print(power(2, 3))
+print(power(2, 3, 3))

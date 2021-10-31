@@ -8,6 +8,20 @@
 """
 
 
+def dec(func):
+    def myfunc():
+        x = func()
+        y = open("output11.data", "a")
+        y.write(x)
+        y.close
+
+    return myfunc
+
+
 # decorate me
+@dec
 def f():
     return "CMI"
+
+
+f()
